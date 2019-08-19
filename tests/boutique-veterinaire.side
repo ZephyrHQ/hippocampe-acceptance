@@ -2,7 +2,7 @@
   "id": "a1611c41-e0d6-4be6-abf9-d4b6d2861865",
   "version": "2.0",
   "name": "Hippocampe - boutique vétérinaire",
-  "url": "https://laboutiqueveterinaire-alpha.pp.hippocampe.njord.fr",
+  "url": "http://localhost:3000/",
   "tests": [{
     "id": "99a3234d-b065-49b0-8885-de9069b23012",
     "name": "Slider",
@@ -24,18 +24,20 @@
       "id": "e8576b28-6b70-48c4-9f2b-6d937e88d5c7",
       "comment": "",
       "command": "click",
-      "target": "css=div:nth-child(1) > .slick-slider .material-icons.fa-angle-right",
+      "target": "id=arrow_right",
       "targets": [
-        ["css=div:nth-child(1) > .slick-slider > .jss345 .material-icons", "css:finder"],
-        ["xpath=//div[@id='root']/div/section/div/div/div[3]/button/span/span", "xpath:idRelative"],
-        ["xpath=//section/div/div/div[3]/button/span/span", "xpath:position"]
+        ["id=arrow_right", "id"],
+        ["css=#arrow_right", "css:finder"],
+        ["xpath=//button[@id='arrow_right']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//section/div/div/div[3]/button", "xpath:position"]
       ],
       "value": ""
     }, {
       "id": "91c8d742-275e-4ff9-8208-d335db465538",
       "comment": "",
       "command": "click",
-      "target": "css=div:nth-child(1) > .slick-slider .material-icons.fa-angle-right",
+      "target": "id=arrow_right",
       "targets": [
         ["css=div:nth-child(1) > .slick-slider > .jss345 .material-icons", "css:finder"],
         ["xpath=//div[@id='root']/div/section/div/div/div[3]/button/span/span", "xpath:idRelative"],
@@ -46,7 +48,7 @@
       "id": "bae1d388-d10d-4389-8339-5460b61e5af3",
       "comment": "",
       "command": "click",
-      "target": "css=div:nth-child(1) > .slick-slider .material-icons.fa-angle-right",
+      "target": "id=arrow_right",
       "targets": [
         ["css=div:nth-child(1) > .slick-slider > .jss345 .material-icons", "css:finder"],
         ["xpath=//div[@id='root']/div/section/div/div/div[3]/button/span/span", "xpath:idRelative"],
@@ -57,13 +59,89 @@
       "id": "ab8bf451-7273-4a09-a1a8-4708e6d1d9aa",
       "comment": "",
       "command": "assertText",
-      "target": "css=.jss352",
+      "target": "id=search_clinic_title",
       "targets": [
-        ["css=.jss352", "css:finder"],
+        ["id=search_clinic_title", "id"],
+        ["css=#search_clinic_title", "css:finder"],
+        ["xpath=//div[@id='search_clinic_title']", "xpath:attributes"],
         ["xpath=//div[@id='root']/div/section[2]/div/div", "xpath:idRelative"],
         ["xpath=//section[2]/div/div", "xpath:position"]
       ],
       "value": "RECHERCHER VOTRE VÉTÉRINAIRE"
+    }, {
+      "id": "1277087e-963c-45ed-bc63-ec2160172e12",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_clinic_button",
+      "targets": [
+        ["id=search_clinic_button", "id"],
+        ["css=#search_clinic_button", "css:finder"],
+        ["xpath=//button[@id='search_clinic_button']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section[2]/div/div[2]/form/div/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rechercher')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c59210e6-9b35-4ed5-8a4c-6899e4620a10",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=clinic_title",
+      "targets": [
+        ["id=clinic_title", "id"],
+        ["css=#clinic_title", "css:finder"],
+        ["xpath=//div[@id='clinic_title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//section[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": "VOTRE CLINIQUE VÉTÉRINAIRE"
+    }, {
+      "id": "ea12845b-a80e-4d56-acd4-d4e29f34f8f1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd201cbc-dc92-4246-b547-2b053f21b9e6",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=new_products_title",
+      "targets": [
+        ["id=new_products_title", "id"],
+        ["css=#new_products_title", "css:finder"],
+        ["xpath=//div[@id='new_products_title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section[6]/div/div", "xpath:idRelative"],
+        ["xpath=//section[6]/div/div", "xpath:position"]
+      ],
+      "value": "NOUVEAUTÉS"
+    }, {
+      "id": "674a6da3-57c2-4590-9a12-fd440271f055",
+      "comment": "",
+      "command": "click",
+      "target": "id=clinic_button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d7ac1ab-8954-4cae-9c8c-3c5b031cba87",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=clinic_title",
+      "targets": [
+        ["id=clinic_title", "id"],
+        ["css=#clinic_title", "css:finder"],
+        ["xpath=//div[@id='clinic_title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//section[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": "VOTRE CLINIQUE VÉTÉRINAIRE"
+    }, {
+      "id": "5f53aeae-5b81-4f55-b818-a30b536f40b1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
     }]
   }],
   "suites": [{
@@ -74,6 +152,6 @@
     "timeout": 300,
     "tests": ["99a3234d-b065-49b0-8885-de9069b23012"]
   }],
-  "urls": ["https://laboutiqueveterinaire-alpha.pp.hippocampe.njord.fr/"],
+  "urls": ["https://laboutiqueveterinaire-alpha.pp.hippocampe.njord.fr/", "localhost:3000", "http://localhost:3000/"],
   "plugins": []
 }
