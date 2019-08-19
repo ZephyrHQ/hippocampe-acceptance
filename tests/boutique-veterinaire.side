@@ -1,8 +1,8 @@
 {
   "id": "a1611c41-e0d6-4be6-abf9-d4b6d2861865",
   "version": "2.0",
-  "name": "Hippocampe - boutique vétérinaire",
-  "url": "http://localhost:3000/",
+  "name": "boutique-veterinaire",
+  "url": "https://bv.local.zephyr-ci.top/",
   "tests": [{
     "id": "99a3234d-b065-49b0-8885-de9069b23012",
     "name": "Slider",
@@ -143,6 +143,185 @@
       "targets": [],
       "value": ""
     }]
+  }, {
+    "id": "ef03d5f7-8b51-48b7-9940-32cea33f43ec",
+    "name": "contact-envoi-valide",
+    "commands": [{
+      "id": "78931fc2-de00-4c27-b07a-8c0f7eb93fd2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "611a8b44-445b-47b1-8dce-6e5642e130c5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c1a52f5-a705-4763-976a-af611e6fa0b0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Contactez-nous')]",
+      "targets": [
+        ["css=.jss190:nth-child(10) .jss276", "css:finder"],
+        ["xpath=//div[@id='root']/div/footer/div[2]/div/div/div/div[2]/ul/div[9]/div/span", "xpath:idRelative"],
+        ["xpath=//div[9]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Contactez-nous')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3a14087-22b5-4091-874f-b5cf83e064e7",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1327)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ed71b77-3f33-485a-b2e7-f62b3ed0345a",
+      "comment": "",
+      "command": "click",
+      "target": "id=select-subject",
+      "targets": [
+        ["id=select-subject", "id"],
+        ["css=#select-subject", "css:finder"],
+        ["xpath=//div[@id='select-subject']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/section/div/form/div/div/div/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d884ba7-679c-4c8b-a8cd-b31a9b3bfa20",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[contains(.,'Information sur un produit')]",
+      "targets": [
+        ["css=.jss500:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='menu-subject']/div[2]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Information sur un produit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e129bd9-2c66-4fbb-9b0b-4fa4b865ca65",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.jss234 > .jss242", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/section/div/form/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Un utilisateur qui teste"
+    }, {
+      "id": "248637f6-4f41-489a-8125-ec1999ccdcce",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.jss234 > .jss242", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/section/div/form/div/div[3]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "monemail@test.com"
+    }, {
+      "id": "b22cdc49-c10a-4cdf-9254-0b4c70520052",
+      "comment": "",
+      "command": "click",
+      "target": "name=content",
+      "targets": [
+        ["name=content", "name"],
+        ["css=.jss244", "css:finder"],
+        ["xpath=//textarea[@name='content']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/section/div/form/div/div[4]/div/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc4f5da3-6f3d-4449-8a86-e943748f48ab",
+      "comment": "",
+      "command": "type",
+      "target": "name=content",
+      "targets": [
+        ["name=content", "name"],
+        ["css=.jss244", "css:finder"],
+        ["xpath=//textarea[@name='content']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/section/div/form/div/div[4]/div/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Un long message écrit pour tester"
+    }, {
+      "id": "e7c0d8dc-de9b-46fa-926c-64b23f3501f3",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6295193-396a-48c7-9aa3-98847157e66f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-checkbox-border",
+      "targets": [
+        ["css=.recaptcha-checkbox-border", "css:finder"],
+        ["xpath=//span[@id='recaptcha-anchor']/div", "xpath:idRelative"],
+        ["xpath=//span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8b78c71-fe15-4e2e-9de1-0235f66ab4f6",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "eacbb30b-7553-4e71-962c-d095f70deae8",
+      "comment": "!!!Attention!!! à modifier",
+      "command": "pause",
+      "target": "10000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d067ab46-3016-4b64-a62a-22d6afbdc11d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#contact-submit-button",
+      "targets": [
+        ["css=.jss430 > .jss429", "css:finder"],
+        ["xpath=//div[@id='root']/section/div/form/div/div[6]/button/span", "xpath:idRelative"],
+        ["xpath=//div[6]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d816647-b0c9-4a0b-bf26-f0a9e5e7fc05",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,454)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61eb169c-b5fd-4d1f-9ab6-42679ce5c626",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#contact-sent-text",
+      "targets": [
+        ["css=.jss687", "css:finder"],
+        ["xpath=//div[@id='root']/section/div/div", "xpath:idRelative"],
+        ["xpath=//section/div/div", "xpath:position"]
+      ],
+      "value": "Votre demande de contact a été envoyée, vous aurez une réponse dans les plus bref délais."
+    }]
   }],
   "suites": [{
     "id": "c95fe1ce-dd65-4814-aa65-3bccdb3f2f08",
@@ -151,7 +330,14 @@
     "parallel": false,
     "timeout": 300,
     "tests": ["99a3234d-b065-49b0-8885-de9069b23012"]
+  }, {
+    "id": "a0e80e8c-6e2a-479c-8385-60fe12c94361",
+    "name": "Contact",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ef03d5f7-8b51-48b7-9940-32cea33f43ec"]
   }],
-  "urls": ["https://laboutiqueveterinaire-alpha.pp.hippocampe.njord.fr/", "localhost:3000", "http://localhost:3000/"],
+  "urls": ["https://laboutiqueveterinaire-alpha.pp.hippocampe.njord.fr/", "localhost:3000", "http://localhost:3000/", "https://bv.local.zephyr-ci.top/"],
   "plugins": []
 }
