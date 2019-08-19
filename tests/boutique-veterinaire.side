@@ -1,0 +1,79 @@
+{
+  "id": "a1611c41-e0d6-4be6-abf9-d4b6d2861865",
+  "version": "2.0",
+  "name": "Hippocampe - boutique vétérinaire",
+  "url": "https://laboutiqueveterinaire-alpha.pp.hippocampe.njord.fr",
+  "tests": [{
+    "id": "99a3234d-b065-49b0-8885-de9069b23012",
+    "name": "Slider",
+    "commands": [{
+      "id": "069b0e5f-9f5b-4eb9-bcec-9e7b79504e9a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5b592f9-a807-49ff-bbbf-ffcc49e4f6f7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e8576b28-6b70-48c4-9f2b-6d937e88d5c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(1) > .slick-slider .material-icons.fa-angle-right",
+      "targets": [
+        ["css=div:nth-child(1) > .slick-slider > .jss345 .material-icons", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div/div/div[3]/button/span/span", "xpath:idRelative"],
+        ["xpath=//section/div/div/div[3]/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91c8d742-275e-4ff9-8208-d335db465538",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(1) > .slick-slider .material-icons.fa-angle-right",
+      "targets": [
+        ["css=div:nth-child(1) > .slick-slider > .jss345 .material-icons", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div/div/div[3]/button/span/span", "xpath:idRelative"],
+        ["xpath=//section/div/div/div[3]/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bae1d388-d10d-4389-8339-5460b61e5af3",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(1) > .slick-slider .material-icons.fa-angle-right",
+      "targets": [
+        ["css=div:nth-child(1) > .slick-slider > .jss345 .material-icons", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div/div/div[3]/button/span/span", "xpath:idRelative"],
+        ["xpath=//section/div/div/div[3]/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab8bf451-7273-4a09-a1a8-4708e6d1d9aa",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.jss352",
+      "targets": [
+        ["css=.jss352", "css:finder"],
+        ["xpath=//div[@id='root']/div/section[2]/div/div", "xpath:idRelative"],
+        ["xpath=//section[2]/div/div", "xpath:position"]
+      ],
+      "value": "RECHERCHER VOTRE VÉTÉRINAIRE"
+    }]
+  }],
+  "suites": [{
+    "id": "c95fe1ce-dd65-4814-aa65-3bccdb3f2f08",
+    "name": "Accueil",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["99a3234d-b065-49b0-8885-de9069b23012"]
+  }],
+  "urls": ["https://laboutiqueveterinaire-alpha.pp.hippocampe.njord.fr/"],
+  "plugins": []
+}

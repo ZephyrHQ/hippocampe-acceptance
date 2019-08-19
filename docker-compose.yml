@@ -1,0 +1,24 @@
+version: '3'
+services:
+    firefox:
+        image: selenium/standalone-firefox-debug:2.53.1
+        volumes:
+            - /dev/shm:/dev/shm
+        ports:
+            - 127.0.0.1:5901:5900
+    
+    chrome:
+        image: selenium/standalone-chrome-debug:3.14
+        volumes:
+            - /dev/shm:/dev/shm
+        environment:
+            - SCREEN_WIDTH=1920
+            - SCREEN_HEIGHT=1080
+        ports:
+            - 127.0.0.1:5900:5900 # VNC
+
+    runner:
+        build: docker/runner
+        volumes:
+         - './tests:/app/sides'
+         - './out:/app/out'
