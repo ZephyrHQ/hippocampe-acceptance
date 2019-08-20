@@ -16,8 +16,8 @@ build:
 
 # Go to console
 cli:
-	docker-compose exec php /bin/sh
+	docker-compose exec runner sh
 
 # Tests
 tests-bv:
-	docker-compose exec -T runner selenium-side-runner -s http://chrome:4444/wd/hub --output-directory /app/out /app/sides/boutique-veterinaire.side
+	docker-compose exec -T runner selenium-side-runner -config visual-grid-config.yml -s http://chrome:4444/wd/hub --output-directory ./out ./sides/boutique-veterinaire.side

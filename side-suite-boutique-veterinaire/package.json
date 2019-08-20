@@ -1,0 +1,29 @@
+{
+  "name": "boutique-veterinaire",
+  "version": "0.0.0",
+  "jest": {
+    "extraGlobals": [
+      "Math"
+    ],
+    "modulePaths": [
+      "/usr/lib/node_modules/selenium-side-runner/node_modules",
+      "/usr/lib/node_modules"
+    ],
+    "setupFilesAfterEnv": [
+      "/usr/lib/node_modules/selenium-side-runner/node_modules/jest-environment-selenium/dist/setup.js"
+    ],
+    "testEnvironment": "jest-environment-selenium",
+    "testEnvironmentOptions": {
+      "capabilities": {
+        "browserName": "chrome"
+      },
+      "params": {},
+      "runId": "b0c0c5a356b7249d6deefe8fd2d43d5d",
+      "path": "/usr/lib/node_modules/",
+      "timeout": 15000
+    }
+  },
+  "dependencies": {
+    "@applitools/eyes-selenium": "4.23.6"
+  }
+}

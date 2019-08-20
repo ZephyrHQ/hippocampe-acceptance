@@ -1,0 +1,223 @@
+params:
+  eyesRendering:
+    - width: 1920
+      height: 1080
+      name: chrome
+    - width: 1920
+      height: 1080
+      name: firefox
+    - width: 1920
+      height: 1080
+      name: ie10
+      id: IE_10
+    - width: 1920
+      height: 1080
+      name: ie11
+      id: IE_11
+    - width: 1920
+      height: 1080
+      name: edge
+    - screenOrientation: portrait
+      deviceName: iPhone XS Max
+      deviceId: iPhone_XS_Max
+    - screenOrientation: landscape
+      deviceName: iPhone XS Max
+      deviceId: iPhone_XS_Max
+    - screenOrientation: portrait
+      deviceName: iPhone XS
+      deviceId: iPhone_XS
+    - screenOrientation: landscape
+      deviceName: iPhone XS
+      deviceId: iPhone_XS
+    - screenOrientation: portrait
+      deviceName: iPhone XR
+      deviceId: iPhone_XR
+    - screenOrientation: landscape
+      deviceName: iPhone XR
+      deviceId: iPhone_XR
+    - screenOrientation: portrait
+      deviceName: iPhone X
+      deviceId: iPhone_X
+    - screenOrientation: landscape
+      deviceName: iPhone X
+      deviceId: iPhone_X
+    - screenOrientation: portrait
+      deviceName: iPhone 6/7/8 Plus
+      deviceId: iPhone_6_7_8_Plus
+    - screenOrientation: landscape
+      deviceName: iPhone 6/7/8 Plus
+      deviceId: iPhone_6_7_8_Plus
+    - screenOrientation: portrait
+      deviceName: iPhone 6/7/8
+      deviceId: iPhone_6_7_8
+    - screenOrientation: landscape
+      deviceName: iPhone 6/7/8
+      deviceId: iPhone_6_7_8
+    - screenOrientation: portrait
+      deviceName: BlackBerry Z30
+      deviceId: BlackBerry_Z30
+    - screenOrientation: landscape
+      deviceName: BlackBerry Z30
+      deviceId: BlackBerry_Z30
+    - screenOrientation: portrait
+      deviceName: Nexus 4
+      deviceId: Nexus_4
+    - screenOrientation: landscape
+      deviceName: Nexus 4
+      deviceId: Nexus_4
+    - screenOrientation: portrait
+      deviceName: Nexus 5
+      deviceId: Nexus_5
+    - screenOrientation: landscape
+      deviceName: Nexus 5
+      deviceId: Nexus_5
+    - screenOrientation: portrait
+      deviceName: Nexus 5X
+      deviceId: Nexus_5X
+    - screenOrientation: landscape
+      deviceName: Nexus 5X
+      deviceId: Nexus_5X
+    - screenOrientation: portrait
+      deviceName: Nexus 6
+      deviceId: Nexus_6
+    - screenOrientation: landscape
+      deviceName: Nexus 6
+      deviceId: Nexus_6
+    - screenOrientation: portrait
+      deviceName: Nexus 6P
+      deviceId: Nexus_6P
+    - screenOrientation: landscape
+      deviceName: Nexus 6P
+      deviceId: Nexus_6P
+    - screenOrientation: portrait
+      deviceName: Pixel 2
+      deviceId: Pixel_2
+    - screenOrientation: landscape
+      deviceName: Pixel 2
+      deviceId: Pixel_2
+    - screenOrientation: portrait
+      deviceName: Pixel 2 XL
+      deviceId: Pixel_2_XL
+    - screenOrientation: landscape
+      deviceName: Pixel 2 XL
+      deviceId: Pixel_2_XL
+    - screenOrientation: portrait
+      deviceName: LG G6
+      deviceId: LG_G6
+    - screenOrientation: landscape
+      deviceName: LG G6
+      deviceId: LG_G6
+    - screenOrientation: portrait
+      deviceName: LG Optimus L70
+      deviceId: LG_Optimus_L70
+    - screenOrientation: landscape
+      deviceName: LG Optimus L70
+      deviceId: LG_Optimus_L70
+    - screenOrientation: portrait
+      deviceName: Nokia N9
+      deviceId: Nokia_N9
+    - screenOrientation: landscape
+      deviceName: Nokia N9
+      deviceId: Nokia_N9
+    - screenOrientation: portrait
+      deviceName: Nokia Lumia 520
+      deviceId: Nokia_Lumia_520
+    - screenOrientation: landscape
+      deviceName: Nokia Lumia 520
+      deviceId: Nokia_Lumia_520
+    - screenOrientation: portrait
+      deviceName: Microsoft Lumia 550
+      deviceId: Microsoft_Lumia_550
+    - screenOrientation: landscape
+      deviceName: Microsoft Lumia 550
+      deviceId: Microsoft_Lumia_550
+    - screenOrientation: portrait
+      deviceName: Microsoft Lumia 950
+      deviceId: Microsoft_Lumia_950
+    - screenOrientation: landscape
+      deviceName: Microsoft Lumia 950
+      deviceId: Microsoft_Lumia_950
+    - screenOrientation: portrait
+      deviceName: Galaxy S III
+      deviceId: Galaxy_S3
+    - screenOrientation: landscape
+      deviceName: Galaxy S III
+      deviceId: Galaxy_S3
+    - screenOrientation: portrait
+      deviceName: Galaxy S5
+      deviceId: Galaxy_S5
+    - screenOrientation: landscape
+      deviceName: Galaxy S5
+      deviceId: Galaxy_S5
+    - screenOrientation: portrait
+      deviceName: Kindle Fire HDX
+      deviceId: Kindle_Fire_HDX
+    - screenOrientation: landscape
+      deviceName: Kindle Fire HDX
+      deviceId: Kindle_Fire_HDX
+    - screenOrientation: portrait
+      deviceName: iPad Mini
+      deviceId: iPad_Mini
+    - screenOrientation: landscape
+      deviceName: iPad Mini
+      deviceId: iPad_Mini
+    - screenOrientation: portrait
+      deviceName: iPad
+      deviceId: iPad
+    - screenOrientation: landscape
+      deviceName: iPad
+      deviceId: iPad
+    - screenOrientation: portrait
+      deviceName: iPad 6th Gen
+      deviceId: iPad_6th_Gen
+    - screenOrientation: landscape
+      deviceName: iPad 6th Gen
+      deviceId: iPad_6th_Gen
+    - screenOrientation: portrait
+      deviceName: iPad Air 2
+      deviceId: iPad_Air_2
+    - screenOrientation: landscape
+      deviceName: iPad Air 2
+      deviceId: iPad_Air_2
+    - screenOrientation: portrait
+      deviceName: iPad Pro
+      deviceId: iPad_Pro
+    - screenOrientation: landscape
+      deviceName: iPad Pro
+      deviceId: iPad_Pro
+    - screenOrientation: portrait
+      deviceName: Nexus 10
+      deviceId: Nexus_10
+    - screenOrientation: landscape
+      deviceName: Nexus 10
+      deviceId: Nexus_10
+    - screenOrientation: portrait
+      deviceName: Nexus 7
+      deviceId: Nexus_7
+    - screenOrientation: landscape
+      deviceName: Nexus 7
+      deviceId: Nexus_7
+    - screenOrientation: portrait
+      deviceName: Galaxy Note 3
+      deviceId: Galaxy_Note_3
+    - screenOrientation: landscape
+      deviceName: Galaxy Note 3
+      deviceId: Galaxy_Note_3
+    - screenOrientation: portrait
+      deviceName: Galaxy Note II
+      deviceId: Galaxy_Note_2
+    - screenOrientation: landscape
+      deviceName: Galaxy Note II
+      deviceId: Galaxy_Note_2
+    - screenOrientation: portrait
+      deviceName: Samsung Galaxy A5
+      deviceId: Samsung_Galaxy_A5
+    - screenOrientation: landscape
+      deviceName: Samsung Galaxy A5
+      deviceId: Samsung_Galaxy_A5
+    - screenOrientation: portrait
+      deviceName: Samsung Galaxy S8
+      deviceId: Samsung_Galaxy_S8
+    - screenOrientation: landscape
+      deviceName: Samsung Galaxy S8
+      deviceId: Samsung_Galaxy_S8

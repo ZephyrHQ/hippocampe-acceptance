@@ -2,7 +2,7 @@
   "id": "a1611c41-e0d6-4be6-abf9-d4b6d2861865",
   "version": "2.0",
   "name": "boutique-veterinaire",
-  "url": "https://bv.local.zephyr-ci.top/",
+  "url": "https://laboutiqueveterinaire-alpha.pp.hippocampe.njord.fr/",
   "tests": [{
     "id": "99a3234d-b065-49b0-8885-de9069b23012",
     "name": "Slider",
@@ -161,6 +161,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "9934d67d-4247-4308-a2f0-8f08034e6e8d",
+      "comment": "",
+      "command": "eyesCheckWindow",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "0c1a52f5-a705-4763-976a-af611e6fa0b0",
       "comment": "",
       "command": "click",
@@ -231,19 +238,6 @@
       ],
       "value": "monemail@test.com"
     }, {
-      "id": "b22cdc49-c10a-4cdf-9254-0b4c70520052",
-      "comment": "",
-      "command": "click",
-      "target": "name=content",
-      "targets": [
-        ["name=content", "name"],
-        ["css=.jss244", "css:finder"],
-        ["xpath=//textarea[@name='content']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/section/div/form/div/div[4]/div/div/div/div/textarea", "xpath:idRelative"],
-        ["xpath=//textarea", "xpath:position"]
-      ],
-      "value": ""
-    }, {
       "id": "cc4f5da3-6f3d-4449-8a86-e943748f48ab",
       "comment": "",
       "command": "type",
@@ -259,37 +253,15 @@
     }, {
       "id": "e7c0d8dc-de9b-46fa-926c-64b23f3501f3",
       "comment": "",
-      "command": "selectFrame",
-      "target": "index=0",
-      "targets": [
-        ["index=0"]
-      ],
+      "command": "run",
+      "target": "captcha",
+      "targets": [],
       "value": ""
     }, {
-      "id": "e6295193-396a-48c7-9aa3-98847157e66f",
+      "id": "b5c36791-dbbf-4491-a83e-b4f8117ee8c9",
       "comment": "",
-      "command": "click",
-      "target": "css=.recaptcha-checkbox-border",
-      "targets": [
-        ["css=.recaptcha-checkbox-border", "css:finder"],
-        ["xpath=//span[@id='recaptcha-anchor']/div", "xpath:idRelative"],
-        ["xpath=//span/div", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "e8b78c71-fe15-4e2e-9de1-0235f66ab4f6",
-      "comment": "",
-      "command": "selectFrame",
-      "target": "relative=parent",
-      "targets": [
-        ["relative=parent"]
-      ],
-      "value": ""
-    }, {
-      "id": "eacbb30b-7553-4e71-962c-d095f70deae8",
-      "comment": "!!!Attention!!! à modifier",
-      "command": "pause",
-      "target": "10000",
+      "command": "eyesCheckWindow",
+      "target": "",
       "targets": [],
       "value": ""
     }, {
@@ -321,6 +293,81 @@
         ["xpath=//section/div/div", "xpath:position"]
       ],
       "value": "Votre demande de contact a été envoyée, vous aurez une réponse dans les plus bref délais."
+    }, {
+      "id": "fe078116-c2dc-4167-91c2-7c5ba26eb6c6",
+      "comment": "",
+      "command": "eyesCheckWindow",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a8273dc4-c72f-4e33-81b8-ea26b0e5af0a",
+    "name": "captcha",
+    "commands": [{
+      "id": "2f7585af-2661-48a9-bd48-a75119bc7341",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//input[@data-testid='recaptcha']",
+      "targets": [],
+      "value": "recaptcha"
+    }, {
+      "id": "86415f49-c208-4fc1-a04c-ca23d8e2fde5",
+      "comment": "",
+      "command": "echo",
+      "target": "recaptcha count ${recaptcha}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e60e6fb7-90cb-45e9-86d5-8b72ee5bccd4",
+      "comment": "",
+      "command": "if",
+      "target": "${recaptcha} > 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc9e08cb-6d53-441a-b632-8767776bbe0a",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "276d0148-ab9f-475e-9b83-577954f850c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-checkbox-border",
+      "targets": [
+        ["css=.recaptcha-checkbox-border", "css:finder"],
+        ["xpath=//span[@id='recaptcha-anchor']/div", "xpath:idRelative"],
+        ["xpath=//span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9d0bc35-27fc-49ee-a42a-0647278f180b",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abdcb7c1-52d3-43f6-b480-ee7fe816f1d0",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "30939a58-aeaa-4ef4-a2e0-b576409dd1f7",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
     }]
   }],
   "suites": [{
@@ -339,5 +386,39 @@
     "tests": ["ef03d5f7-8b51-48b7-9940-32cea33f43ec"]
   }],
   "urls": ["https://laboutiqueveterinaire-alpha.pp.hippocampe.njord.fr/", "localhost:3000", "http://localhost:3000/", "https://bv.local.zephyr-ci.top/"],
-  "plugins": []
+  "plugins": [{
+    "id": "fbnkflkahhlmhdgkddaafgnnokifobik",
+    "name": "Applitools",
+    "version": "1.0.0"
+  }],
+  "snapshot": {
+    "globalConfig": {
+      "snapshot": "const { Eyes, Target } = require('@applitools/eyes-selenium');global.Target = Target;const { ConsoleLogHandler, BatchInfo } = require('@applitools/eyes-sdk-core');let apiKey = process.env.APPLITOOLS_API_KEY, serverUrl = process.env.APPLITOOLS_SERVER_URL, appName = \"boutique-veterinaire\", batchId = configuration.runId, batchName;"
+    },
+    "suites": [{
+      "name": "Accueil",
+      "persistSession": false,
+      "snapshot": {
+        "hook": "beforeAll(async () => {batchName = \"Contact\";});beforeEach(async () => {global.eyes = Eyes.fromBrowserInfo(serverUrl, configuration.params.eyesDisabled, configuration.params.eyesRendering ? { browser: configuration.params.eyesRendering } : undefined);eyes.setApiKey(apiKey);eyes.getBaseAgentId = () => (\"eyes.seleniumide.runner 1.7.5 \" + (eyes._isVisualGrid ? \"visualgrid\" : \"local\"));eyes.setAgentId(\"eyes.seleniumide.runner 1.7.5 \" + (eyes._isVisualGrid ? \"visualgrid\" : \"local\"));eyes.setBatch(new BatchInfo(batchName, undefined, batchId));if(!eyes._isVisualGrid){eyes.setHideScrollbars(true);eyes.setStitchMode(\"CSS\");}eyes.setSendDom(configuration.params.eyesDomUploadEnabled === undefined ? true : configuration.params.eyesDomUploadEnabled);if (configuration.params.eyesLogsEnabled) {eyes.setLogHandler(new ConsoleLogHandler(true));}});afterEach(async () => {if (eyes._isOpen) {eyes.getEyesRunner ? await eyes.getEyesRunner().getAllResults() : await eyes.close();}});"
+      }
+    }],
+    "tests": [{
+      "id": "ef03d5f7-8b51-48b7-9940-32cea33f43ec",
+      "snapshot": {
+        "commands": {
+          "9934d67d-4247-4308-a2f0-8f08034e6e8d": "if (!opts.isNested) {await eyes.check(\"\" || (new URL(await driver.getCurrentUrl())).pathname, Target.window().webHook(preRenderHook).fully(true));}",
+          "b5c36791-dbbf-4491-a83e-b4f8117ee8c9": "if (!opts.isNested) {await eyes.check(\"\" || (new URL(await driver.getCurrentUrl())).pathname, Target.window().webHook(preRenderHook).fully(true));}",
+          "fe078116-c2dc-4167-91c2-7c5ba26eb6c6": "if (!opts.isNested) {await eyes.check(\"\" || (new URL(await driver.getCurrentUrl())).pathname, Target.window().webHook(preRenderHook).fully(true));}"
+        },
+        "setupHooks": ["const _driver = driver;driver = await eyes.open(driver, appName, \"contact-envoi-valide\");global.preRenderHook = \"\";"],
+        "teardownHooks": ["driver = _driver;"]
+      }
+    }]
+  },
+  "dependencies": {
+    "@applitools/eyes-selenium": "4.23.6"
+  },
+  "jest": {
+    "extraGlobals": ["Math"]
+  }
 }
