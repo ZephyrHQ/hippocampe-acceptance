@@ -626,6 +626,145 @@
       "targets": [],
       "value": ""
     }]
+  }, {
+    "id": "0e27e524-f30e-419f-9cf2-04e44eee90ef",
+    "name": "connection_login_valid",
+    "commands": [{
+      "id": "94f56362-e950-4742-8235-9429c379f40e",
+      "comment": "",
+      "command": "open",
+      "target": "/signin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da01ff60-0b41-40be-9705-f5f497977a32",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98ca007c-5a37-4948-8ac7-e7f1cc9591f3",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.MuiInputBase-focused-930 > .MuiInputBase-input-938", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section/div/div/div/form/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "benoit.pepin@zephyr-web.fr"
+    }, {
+      "id": "51b3f737-805b-4472-bad2-ffac43c7bf49",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.MuiInputBase-inputAdornedEnd-944", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section/div/div/div/form/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "salut123"
+    }, {
+      "id": "d398be42-9913-45ec-935b-df2653bf92e7",
+      "comment": "",
+      "command": "click",
+      "target": "id=signin_connect",
+      "targets": [
+        ["id=signin_connect", "id"],
+        ["css=#signin_connect", "css:finder"],
+        ["xpath=//button[@id='signin_connect']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section/div/div/div/form/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//form/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d374bc5-64d3-49f3-bf10-8cbe401b3008",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=last_command_title",
+      "targets": [
+        ["css=.withRouter-SectionLastCommands--sectionTitle-1016", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/section/div", "xpath:idRelative"],
+        ["xpath=//div[2]/section/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "c9b6c9bd-33ae-43f1-8e9b-4d342fd40635",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Tableau de bord - La Boutique Vétérinaire",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c39a8e23-9695-4d42-888f-22eb1205e35f",
+    "name": "connection_login_invalid",
+    "commands": [{
+      "id": "f90f5d6d-b7db-4df5-873c-89d76a3a7f2d",
+      "comment": "",
+      "command": "open",
+      "target": "/signin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7762a9b1-abf1-4a07-8c9c-eee4845f0314",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2f1baca-45b9-46d9-a983-41650e9ff5c9",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.MuiInputBase-focused-930 > .MuiInputBase-input-938", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section/div/div/div/form/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "invalid@email.fr"
+    }, {
+      "id": "81feb6e6-701c-4f23-a7d0-e32664620c93",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.MuiInputBase-inputAdornedEnd-944", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section/div/div/div/form/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "invalidpassword"
+    }, {
+      "id": "3c9cd10a-8871-47f3-8188-cdb9871be131",
+      "comment": "",
+      "command": "click",
+      "target": "id=signin_connect",
+      "targets": [
+        ["id=signin_connect", "id"],
+        ["css=#signin_connect", "css:finder"],
+        ["xpath=//button[@id='signin_connect']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section/div/div/div/form/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//form/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31694581-3916-4498-be29-84b9789cfbb7",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=error_signin",
+      "targets": [],
+      "value": "30000"
+    }]
   }],
   "suites": [{
     "id": "c95fe1ce-dd65-4814-aa65-3bccdb3f2f08",
