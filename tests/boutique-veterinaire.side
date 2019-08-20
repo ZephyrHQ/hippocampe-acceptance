@@ -2,10 +2,10 @@
   "id": "a1611c41-e0d6-4be6-abf9-d4b6d2861865",
   "version": "2.0",
   "name": "boutique-veterinaire",
-  "url": "https://bv.local.zephyr-ci.top/",
+  "url": "http://localhost:3000/",
   "tests": [{
     "id": "99a3234d-b065-49b0-8885-de9069b23012",
-    "name": "Slider",
+    "name": "home_headerslider",
     "commands": [{
       "id": "069b0e5f-9f5b-4eb9-bcec-9e7b79504e9a",
       "comment": "",
@@ -54,93 +54,6 @@
         ["xpath=//div[@id='root']/div/section/div/div/div[3]/button/span/span", "xpath:idRelative"],
         ["xpath=//section/div/div/div[3]/button/span/span", "xpath:position"]
       ],
-      "value": ""
-    }, {
-      "id": "ab8bf451-7273-4a09-a1a8-4708e6d1d9aa",
-      "comment": "",
-      "command": "assertText",
-      "target": "id=search_clinic_title",
-      "targets": [
-        ["id=search_clinic_title", "id"],
-        ["css=#search_clinic_title", "css:finder"],
-        ["xpath=//div[@id='search_clinic_title']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/section[2]/div/div", "xpath:idRelative"],
-        ["xpath=//section[2]/div/div", "xpath:position"]
-      ],
-      "value": "RECHERCHER VOTRE VÉTÉRINAIRE"
-    }, {
-      "id": "1277087e-963c-45ed-bc63-ec2160172e12",
-      "comment": "",
-      "command": "click",
-      "target": "id=search_clinic_button",
-      "targets": [
-        ["id=search_clinic_button", "id"],
-        ["css=#search_clinic_button", "css:finder"],
-        ["xpath=//button[@id='search_clinic_button']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/section[2]/div/div[2]/form/div/div[4]/button", "xpath:idRelative"],
-        ["xpath=//div[4]/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Rechercher')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "c59210e6-9b35-4ed5-8a4c-6899e4620a10",
-      "comment": "",
-      "command": "assertText",
-      "target": "id=clinic_title",
-      "targets": [
-        ["id=clinic_title", "id"],
-        ["css=#clinic_title", "css:finder"],
-        ["xpath=//div[@id='clinic_title']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/section[2]/div/div/div/div", "xpath:idRelative"],
-        ["xpath=//section[2]/div/div/div/div", "xpath:position"]
-      ],
-      "value": "VOTRE CLINIQUE VÉTÉRINAIRE"
-    }, {
-      "id": "ea12845b-a80e-4d56-acd4-d4e29f34f8f1",
-      "comment": "",
-      "command": "open",
-      "target": "/",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "fd201cbc-dc92-4246-b547-2b053f21b9e6",
-      "comment": "",
-      "command": "assertText",
-      "target": "id=new_products_title",
-      "targets": [
-        ["id=new_products_title", "id"],
-        ["css=#new_products_title", "css:finder"],
-        ["xpath=//div[@id='new_products_title']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/section[6]/div/div", "xpath:idRelative"],
-        ["xpath=//section[6]/div/div", "xpath:position"]
-      ],
-      "value": "NOUVEAUTÉS"
-    }, {
-      "id": "674a6da3-57c2-4590-9a12-fd440271f055",
-      "comment": "",
-      "command": "click",
-      "target": "id=clinic_button",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "9d7ac1ab-8954-4cae-9c8c-3c5b031cba87",
-      "comment": "",
-      "command": "assertText",
-      "target": "id=clinic_title",
-      "targets": [
-        ["id=clinic_title", "id"],
-        ["css=#clinic_title", "css:finder"],
-        ["xpath=//div[@id='clinic_title']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/section[2]/div/div/div/div", "xpath:idRelative"],
-        ["xpath=//section[2]/div/div/div/div", "xpath:position"]
-      ],
-      "value": "VOTRE CLINIQUE VÉTÉRINAIRE"
-    }, {
-      "id": "5f53aeae-5b81-4f55-b818-a30b536f40b1",
-      "comment": "",
-      "command": "open",
-      "target": "/",
-      "targets": [],
       "value": ""
     }]
   }, {
@@ -231,19 +144,6 @@
       ],
       "value": "monemail@test.com"
     }, {
-      "id": "b22cdc49-c10a-4cdf-9254-0b4c70520052",
-      "comment": "",
-      "command": "click",
-      "target": "name=content",
-      "targets": [
-        ["name=content", "name"],
-        ["css=.jss244", "css:finder"],
-        ["xpath=//textarea[@name='content']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/section/div/form/div/div[4]/div/div/div/div/textarea", "xpath:idRelative"],
-        ["xpath=//textarea", "xpath:position"]
-      ],
-      "value": ""
-    }, {
       "id": "cc4f5da3-6f3d-4449-8a86-e943748f48ab",
       "comment": "",
       "command": "type",
@@ -322,6 +222,410 @@
       ],
       "value": "Votre demande de contact a été envoyée, vous aurez une réponse dans les plus bref délais."
     }]
+  }, {
+    "id": "dd5cb061-b252-4ca8-aa40-f496fb987ffc",
+    "name": "home_searchclinic",
+    "commands": [{
+      "id": "09b0c421-06c8-4ffb-83d8-600c7d5061a9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44305061-3a7b-4895-a6e9-d0be644f85d1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "359667d7-1706-46ad-b82b-434808666d88",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_clinic_button",
+      "targets": [
+        ["id=search_clinic_button", "id"],
+        ["css=#search_clinic_button", "css:finder"],
+        ["xpath=//button[@id='search_clinic_button']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section[2]/div/div[2]/form/div/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rechercher')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f308b163-f9c3-4a16-8a70-406f232fc4bd",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=clinic_title",
+      "targets": [
+        ["id=clinic_title", "id"],
+        ["css=#clinic_title", "css:finder"],
+        ["xpath=//div[@id='clinic_title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//section[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": "VOTRE CLINIQUE VÉTÉRINAIRE"
+    }, {
+      "id": "8b469374-eb0c-4658-a65d-757a5e607b44",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d982205a-f831-4f6b-a1ef-cdf7b634bff0",
+    "name": "home_blocknews",
+    "commands": [{
+      "id": "e1077c42-78ed-4a9d-9e56-d568998dc2b5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1b8ba60-5d4a-4f19-b685-e4ad78cb2340",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05b64fb1-e995-4845-b928-c3cf604a0e17",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=new_products_title",
+      "targets": [
+        ["id=new_products_title", "id"],
+        ["css=#new_products_title", "css:finder"],
+        ["xpath=//div[@id='new_products_title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section[6]/div/div", "xpath:idRelative"],
+        ["xpath=//section[6]/div/div", "xpath:position"]
+      ],
+      "value": "NOUVEAUTÉS"
+    }]
+  }, {
+    "id": "3e611494-5f1a-4654-903f-13a406c56f4f",
+    "name": "home_clinic",
+    "commands": [{
+      "id": "8e5d4fc9-115d-43d1-818f-0a6074917d5c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40248c79-fa73-468b-811a-08b5e148c4b6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d8c5052-19de-444d-b1ef-38d55b556570",
+      "comment": "",
+      "command": "click",
+      "target": "id=clinic_button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb65e515-d9a2-4564-b06c-376ef0a0063c",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=clinic_title",
+      "targets": [
+        ["id=clinic_title", "id"],
+        ["css=#clinic_title", "css:finder"],
+        ["xpath=//div[@id='clinic_title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//section[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": "VOTRE CLINIQUE VÉTÉRINAIRE"
+    }, {
+      "id": "128c1d18-cd04-43c0-b46a-1ba9127e8be5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6d5b802a-2763-4ced-9223-07005d157577",
+    "name": "content_aPropos",
+    "commands": [{
+      "id": "43e0c782-40bb-4c08-b511-a82f381a5469",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f14ab251-4a8a-47e1-9c3d-df687b2749ba",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc00dd52-addd-4908-ad69-66f97a040a44",
+      "comment": "",
+      "command": "click",
+      "target": "id=/a-propos",
+      "targets": [
+        ["id=search_clinic_button", "id"],
+        ["css=#search_clinic_button", "css:finder"],
+        ["xpath=//button[@id='search_clinic_button']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section[2]/div/div[2]/form/div/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rechercher')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01385d5d-174c-440d-9e0b-b887f83f006c",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "A Propos - La Boutique Vétérinaire",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d534e79-697e-4209-8f0f-e5f8b0a8b2c4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c90c44ed-cd89-4b8b-8d6d-b7f992b2c11e",
+    "name": "content_security",
+    "commands": [{
+      "id": "592c476f-85d1-4f36-9fc2-fe087e8e89a4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb1ccde8-bd27-455f-b82a-7e3db40d9bdf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b42b4e2-997a-487c-9dc4-1af17b6fb706",
+      "comment": "",
+      "command": "click",
+      "target": "id=/security",
+      "targets": [
+        ["id=search_clinic_button", "id"],
+        ["css=#search_clinic_button", "css:finder"],
+        ["xpath=//button[@id='search_clinic_button']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section[2]/div/div[2]/form/div/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rechercher')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cee36bc0-517e-49c9-a88a-f299f93247da",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Sécurité et confidentialités - La Boutique Vétérinaire",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "911dde36-617b-4037-884b-b7c44c6145a2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9614f3c6-49d6-4d99-9fb3-815290a13ef7",
+    "name": "content_cgu",
+    "commands": [{
+      "id": "ad6ff471-8a04-4341-af06-88be4e256a2b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82d49eee-0361-4fa2-a1d1-a5223a64c32d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6d501a0-4d05-42d1-9673-c53e52780c55",
+      "comment": "",
+      "command": "click",
+      "target": "id=/cgv",
+      "targets": [
+        ["id=search_clinic_button", "id"],
+        ["css=#search_clinic_button", "css:finder"],
+        ["xpath=//button[@id='search_clinic_button']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section[2]/div/div[2]/form/div/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rechercher')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6568b9fd-9347-4338-9a9a-b8d2e553bb4a",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "CGV - La Boutique Vétérinaire",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97040eeb-c6a7-49de-903f-9bd082bb5515",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d66062cc-ad95-4dc2-b9a9-f5e76f51c380",
+    "name": "content_privacy",
+    "commands": [{
+      "id": "16666649-e2a7-46d2-afef-770f3f10584a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4455d27a-d587-49a0-a599-822587b4b591",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad25e846-5f37-45c5-ae54-78930e308993",
+      "comment": "",
+      "command": "click",
+      "target": "id=/privacy",
+      "targets": [
+        ["id=search_clinic_button", "id"],
+        ["css=#search_clinic_button", "css:finder"],
+        ["xpath=//button[@id='search_clinic_button']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section[2]/div/div[2]/form/div/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rechercher')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "140d05a0-1946-40ce-b9c5-ed558eaed758",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Données personnelles - La Boutique Vétérinaire",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7b2452f-5cae-426e-b2e5-d3e04862d65c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ee8bdaf3-0fd0-4e4f-99c1-d9024c9afd5e",
+    "name": "content_cgv",
+    "commands": [{
+      "id": "f04afb81-6c15-4dc5-b49d-926b7cce12ad",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d4ea722-e400-47ef-a6e9-484b566bd6fb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5308986e-ec3a-4817-8d36-5f8f04089677",
+      "comment": "",
+      "command": "click",
+      "target": "id=/cgu",
+      "targets": [
+        ["id=search_clinic_button", "id"],
+        ["css=#search_clinic_button", "css:finder"],
+        ["xpath=//button[@id='search_clinic_button']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section[2]/div/div[2]/form/div/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rechercher')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ac6015c-1be9-4076-8c03-05f7180dfdc3",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "CGU - La Boutique Vétérinaire",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "886384d3-2e30-4ace-a1c7-2b86fdebb7a2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7a86f01e-ce14-49c8-b94d-a76f34b75807",
+    "name": "content_sitemap",
+    "commands": [{
+      "id": "0fd6cecd-1a03-44c2-a7a6-df335037ffe5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9008dab-d0ca-4a39-96af-41fe5e6d3af2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a883e087-5082-4a85-95f0-31c3b76f10f3",
+      "comment": "",
+      "command": "click",
+      "target": "id=/sitemap",
+      "targets": [
+        ["id=search_clinic_button", "id"],
+        ["css=#search_clinic_button", "css:finder"],
+        ["xpath=//button[@id='search_clinic_button']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section[2]/div/div[2]/form/div/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rechercher')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55dd9c6f-36f6-4c8b-89a8-36b349b75fac",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Plan du site - La Boutique Vétérinaire",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ebaf4d8-f346-4f03-8985-700791c352f6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "c95fe1ce-dd65-4814-aa65-3bccdb3f2f08",
@@ -329,7 +633,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["99a3234d-b065-49b0-8885-de9069b23012"]
+    "tests": ["99a3234d-b065-49b0-8885-de9069b23012", "3e611494-5f1a-4654-903f-13a406c56f4f", "d982205a-f831-4f6b-a1ef-cdf7b634bff0", "dd5cb061-b252-4ca8-aa40-f496fb987ffc"]
   }, {
     "id": "a0e80e8c-6e2a-479c-8385-60fe12c94361",
     "name": "Contact",
@@ -337,6 +641,13 @@
     "parallel": false,
     "timeout": 300,
     "tests": ["ef03d5f7-8b51-48b7-9940-32cea33f43ec"]
+  }, {
+    "id": "84ec47df-de80-4686-98c0-a60cc6f8abde",
+    "name": "Contenu",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6d5b802a-2763-4ced-9223-07005d157577", "9614f3c6-49d6-4d99-9fb3-815290a13ef7", "ee8bdaf3-0fd0-4e4f-99c1-d9024c9afd5e", "d66062cc-ad95-4dc2-b9a9-f5e76f51c380", "c90c44ed-cd89-4b8b-8d6d-b7f992b2c11e", "7a86f01e-ce14-49c8-b94d-a76f34b75807"]
   }],
   "urls": ["https://laboutiqueveterinaire-alpha.pp.hippocampe.njord.fr/", "localhost:3000", "http://localhost:3000/", "https://bv.local.zephyr-ci.top/"],
   "plugins": []
