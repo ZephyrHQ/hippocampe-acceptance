@@ -2,7 +2,7 @@
   "id": "a1611c41-e0d6-4be6-abf9-d4b6d2861865",
   "version": "2.0",
   "name": "boutique-veterinaire",
-  "url": "http://localhost:3000/",
+  "url": "https://bv.local.zephyr-ci.top/",
   "tests": [{
     "id": "99a3234d-b065-49b0-8885-de9069b23012",
     "name": "home_headerslider",
@@ -633,7 +633,7 @@
       "id": "94f56362-e950-4742-8235-9429c379f40e",
       "comment": "",
       "command": "open",
-      "target": "/signin",
+      "target": "/",
       "targets": [],
       "value": ""
     }, {
@@ -641,6 +641,13 @@
       "comment": "",
       "command": "setWindowSize",
       "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7145f8c-c90a-4ae0-ad38-df7ca7814ffe",
+      "comment": "",
+      "command": "click",
+      "target": "id=button_dropdown_account",
       "targets": [],
       "value": ""
     }, {
@@ -686,20 +693,13 @@
       "id": "4d374bc5-64d3-49f3-bf10-8cbe401b3008",
       "comment": "",
       "command": "waitForElementPresent",
-      "target": "id=last_command_title",
+      "target": "id=dropdown_account_title",
       "targets": [
         ["css=.withRouter-SectionLastCommands--sectionTitle-1016", "css:finder"],
         ["xpath=//div[@id='root']/div/div/div/div[2]/section/div", "xpath:idRelative"],
         ["xpath=//div[2]/section/div", "xpath:position"]
       ],
       "value": "30000"
-    }, {
-      "id": "c9b6c9bd-33ae-43f1-8e9b-4d342fd40635",
-      "comment": "",
-      "command": "assertTitle",
-      "target": "Tableau de bord - La Boutique Vétérinaire",
-      "targets": [],
-      "value": ""
     }]
   }, {
     "id": "c39a8e23-9695-4d42-888f-22eb1205e35f",
@@ -708,7 +708,7 @@
       "id": "f90f5d6d-b7db-4df5-873c-89d76a3a7f2d",
       "comment": "",
       "command": "open",
-      "target": "/signin",
+      "target": "/",
       "targets": [],
       "value": ""
     }, {
@@ -716,6 +716,13 @@
       "comment": "",
       "command": "setWindowSize",
       "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7922bccf-2efa-46c7-8587-8833aefdfe4e",
+      "comment": "",
+      "command": "click",
+      "target": "id=button_dropdown_account",
       "targets": [],
       "value": ""
     }, {
@@ -762,6 +769,45 @@
       "comment": "",
       "command": "waitForElementPresent",
       "target": "id=error_signin",
+      "targets": [],
+      "value": "30000"
+    }]
+  }, {
+    "id": "183e59d5-aa0e-478e-94a2-1dfb5fa15241",
+    "name": "connection_logout",
+    "commands": [{
+      "id": "ea68424a-daf8-4639-9407-df810677e83d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "36a5529a-9623-4b01-afe7-a27fa3f220fd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b5cb95a-7f07-4a02-916a-026a3dc19929",
+      "comment": "",
+      "command": "click",
+      "target": "id=button_dropdown_account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf347b84-e071-4b00-8331-9eefe77085cc",
+      "comment": "",
+      "command": "click",
+      "target": "id=logout_button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc34db62-42ad-48d5-ba6d-555e1fd1f6b4",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=signin_connect",
       "targets": [],
       "value": "30000"
     }]
