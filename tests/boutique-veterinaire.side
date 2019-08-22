@@ -1033,6 +1033,13 @@
     "id": "f3cc726d-7580-4af4-acf5-908d0c2159e5",
     "name": "_login",
     "commands": [{
+      "id": "4a1bba02-3d8a-4d8d-8122-cd7bb16def2b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "9281d65e-a505-4751-8863-f4c5434b6ffa",
       "comment": "",
       "command": "run",
@@ -1100,6 +1107,13 @@
       ],
       "value": ""
     }, {
+      "id": "0160ef20-7a25-4b77-a8bf-2417bae8898c",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=logout_button",
+      "targets": [],
+      "value": "5000"
+    }, {
       "id": "062f2070-6d39-43b2-ac9c-ef15f8f675fa",
       "comment": "",
       "command": "click",
@@ -1152,6 +1166,1202 @@
       "target": "id=logout_button",
       "targets": [],
       "value": ""
+    }]
+  }, {
+    "id": "7a5b798d-ed5e-4700-9cb2-c38e3b0715aa",
+    "name": "account_dashboard",
+    "commands": [{
+      "id": "1b9fd783-be00-41ac-a466-aca881021c96",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8d88e9d-4847-4ca8-a8a1-7200ca071698",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "945906e1-7023-4083-9cef-910edc90b7cc",
+      "comment": "",
+      "command": "run",
+      "target": "_open_client_account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58a161f1-bebe-482a-bb99-41b834836d12",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Mon tableau de bord')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a972f7ac-ec88-49e2-8f14-9f85b65e7162",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=last_command_title",
+      "targets": [
+        ["id=last_command_title", "id"],
+        ["css=#last_command_title", "css:finder"],
+        ["xpath=//div[@id='last_command_title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/section/div", "xpath:idRelative"],
+        ["xpath=//div[2]/section/div", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "fe897cf8-1564-421c-a6d7-41b0069c3064",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(.,'Ma wishlist')]",
+      "targets": [
+        ["css=.MuiMenuItem-root-838:nth-child(7) .MuiTypography-root-276", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/section/div/ul/li[7]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//li[7]/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d479712b-6c62-4bed-8ac4-44dd81bf508c",
+    "name": "_open_client_account",
+    "commands": [{
+      "id": "8b3050cf-6436-440f-a16f-07e089cb69ff",
+      "comment": "",
+      "command": "run",
+      "target": "_login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f930181a-fe45-49bf-9504-320041e47ffe",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//span[@id='bv-loaded']",
+      "targets": [],
+      "value": "loaded"
+    }, {
+      "id": "d16da265-e125-4e4b-968f-0ab70bc209e6",
+      "comment": "",
+      "command": "echo",
+      "target": "loaded : ${loaded}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44fae025-79ab-4497-bd0e-1d349be44542",
+      "comment": "",
+      "command": "if",
+      "target": "${loaded} > 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c73075fd-fa68-4b07-b2b8-d68a49cc7ab9",
+      "comment": "",
+      "command": "click",
+      "target": "id=button_dropdown_account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7a136c6-4c90-4358-b36c-ced9a4b2d6e0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Mon tableau de bord')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e03398b9-f03c-42f9-91f6-bbbad8fe241d",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d854fac6-4953-4eca-b7fc-efd55e51995a",
+    "name": "account_informations_invalid",
+    "commands": [{
+      "id": "554a09f8-908c-455a-919d-7d967a0fcd8e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ab69099-4687-4aba-9fc1-88e3c9e3346d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2d12e53-a6b9-4d3f-8861-1e6c1d48383d",
+      "comment": "",
+      "command": "run",
+      "target": "_open_client_account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "169eb70a-eff1-4da3-8826-5db2ddbc70cd",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Mes informations')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df05d6ed-d2c5-49e3-9516-28be09f5fb9f",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[contains(.,'Mon tableau de bord')]",
+      "targets": [
+        ["id=last_command_title", "id"],
+        ["css=#last_command_title", "css:finder"],
+        ["xpath=//div[@id='last_command_title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/section/div", "xpath:idRelative"],
+        ["xpath=//div[2]/section/div", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "d2905627-a4af-40f5-b1ca-49ca8a1a5719",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(.,'Ma wishlist')]",
+      "targets": [
+        ["css=.MuiMenuItem-root-838:nth-child(7) .MuiTypography-root-276", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/section/div/ul/li[7]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//li[7]/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bf2ae39-c05f-48c4-a26c-caa13c8499e6",
+      "comment": "",
+      "command": "click",
+      "target": "id=select-civility",
+      "targets": [
+        ["id=select-civility", "id"],
+        ["css=#select-civility", "css:finder"],
+        ["xpath=//div[@id='select-civility']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/form/div/div/div/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "beb6fb55-259d-48d2-a874-dd9c25b96bb1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='menu-civility']//li[contains(.,'Monsieur')]",
+      "targets": [
+        ["css=.jss500:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='menu-subject']/div[2]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Information sur un produit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "15dc82f7-e926-4044-9ccc-8dab681e0bb8",
+      "comment": "",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.jss234 > .jss242", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/section/div/form/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "ae28fd20-a7d0-4729-8d41-959f44010c98",
+      "comment": "",
+      "command": "click",
+      "target": "id=my-informations-button",
+      "targets": [
+        ["id=my-informations-button", "id"],
+        ["css=#my-informations-button", "css:finder"],
+        ["xpath=//button[@id='my-informations-button']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/form/div/div[11]/button", "xpath:idRelative"],
+        ["xpath=//form/div/div[11]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70996613-16f3-452a-9e09-63c059b83c96",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[contains(.,\"Numéro invalide\")]",
+      "targets": [],
+      "value": "5000"
+    }]
+  }, {
+    "id": "3174195d-65e3-4bea-a701-72c1e8c8fb00",
+    "name": "account_informations_valid",
+    "commands": [{
+      "id": "f68f0ae7-aa7a-425f-aa1d-4512e45e2ea5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70577623-8992-479c-ad89-a55cf937ea6c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a07debe5-5437-4154-8c20-9a99b5890663",
+      "comment": "",
+      "command": "run",
+      "target": "_open_client_account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3211dcc0-d0a5-4441-bacb-209ffaacc68f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Mes informations')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec283e5c-3292-45d4-813f-4bd2f7cce06d",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[contains(.,'Mon tableau de bord')]",
+      "targets": [
+        ["id=last_command_title", "id"],
+        ["css=#last_command_title", "css:finder"],
+        ["xpath=//div[@id='last_command_title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/section/div", "xpath:idRelative"],
+        ["xpath=//div[2]/section/div", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "5364fdbb-ec87-4eac-b06b-80a1c33d9e14",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(.,'Ma wishlist')]",
+      "targets": [
+        ["css=.MuiMenuItem-root-838:nth-child(7) .MuiTypography-root-276", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/section/div/ul/li[7]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//li[7]/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "198c6978-0811-4372-8edb-2c1db8ab265c",
+      "comment": "",
+      "command": "click",
+      "target": "id=select-civility",
+      "targets": [
+        ["id=select-civility", "id"],
+        ["css=#select-civility", "css:finder"],
+        ["xpath=//div[@id='select-civility']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/form/div/div/div/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "daa20820-2a97-4b6c-8d9c-ecc14d5c8962",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='menu-civility']//li[contains(.,'Monsieur')]",
+      "targets": [
+        ["css=.jss500:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='menu-subject']/div[2]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Information sur un produit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7a69619-0693-42eb-9dc1-1d39531553ff",
+      "comment": "",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.jss234 > .jss242", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/section/div/form/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "20202020"
+    }, {
+      "id": "23be47ad-3f04-43e0-9235-3518d14d17db",
+      "comment": "",
+      "command": "click",
+      "target": "id=my-informations-button",
+      "targets": [
+        ["id=my-informations-button", "id"],
+        ["css=#my-informations-button", "css:finder"],
+        ["xpath=//button[@id='my-informations-button']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/form/div/div[11]/button", "xpath:idRelative"],
+        ["xpath=//form/div/div[11]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3ebfdbf-b01d-4b87-affa-2ce142279a50",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//span[contains(.,\"Erreur.\")]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "03131e29-debe-4460-9ab0-683125c859fa",
+    "name": "account_invoice_adresses_invalid",
+    "commands": [{
+      "id": "4d6bd48b-6f82-47da-9ecd-776061d89f2c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3883a815-7afc-4fcc-95ee-efe6c6d11909",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be1c5990-e7d8-43f1-8190-69edd6b61226",
+      "comment": "",
+      "command": "run",
+      "target": "_open_client_account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d615a3cf-c812-4d3a-af0e-22294a510ea4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Mes adresses')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9f9af79-d9e7-4a88-a9aa-1386b158f0a4",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[contains(.,'Mon tableau de bord')]",
+      "targets": [
+        ["id=last_command_title", "id"],
+        ["css=#last_command_title", "css:finder"],
+        ["xpath=//div[@id='last_command_title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/section/div", "xpath:idRelative"],
+        ["xpath=//div[2]/section/div", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "829e5f0f-7f75-45b3-822e-95e895bf7bc0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(.,'Ma wishlist')]",
+      "targets": [
+        ["css=.MuiMenuItem-root-838:nth-child(7) .MuiTypography-root-276", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/section/div/ul/li[7]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//li[7]/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5933d985-b1ee-47c6-a812-73c1a2f3dbbf",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form[@id='invoice']//input[@name='address']",
+      "targets": [
+        ["name=address", "name"],
+        ["css=.MuiInputBase-focused-334 > .MuiInputBase-input-342", "css:finder"],
+        ["xpath=//input[@name='address']", "xpath:attributes"],
+        ["xpath=//form[@id='invoice']/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "5 rue bouquet"
+    }, {
+      "id": "fc423112-7cb6-45db-87aa-8b9b2ef2d1ed",
+      "comment": "",
+      "command": "click",
+      "target": "id=invoice-button",
+      "targets": [
+        ["id=my-informations-button", "id"],
+        ["css=#my-informations-button", "css:finder"],
+        ["xpath=//button[@id='my-informations-button']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/form/div/div[11]/button", "xpath:idRelative"],
+        ["xpath=//form/div/div[11]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3deddd3d-5200-4ad4-9a7f-54982fbaa5e8",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[contains(.,\"Requis\")]",
+      "targets": [],
+      "value": "5000"
+    }]
+  }, {
+    "id": "75e64154-4d05-4f5e-9990-81eb57f10a19",
+    "name": "account_invoice_adresses_valid",
+    "commands": [{
+      "id": "b41efe13-72e2-4720-b75a-a00da6218e06",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3aa25ca9-7553-4c27-8887-c9c967b7adca",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18d47375-9a44-4e23-a291-f78d963f2747",
+      "comment": "",
+      "command": "run",
+      "target": "_open_client_account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0894601e-4460-484b-9ec2-1bbe1e033935",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Mes adresses')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be69ee06-5a37-4f5a-b393-ce0b2e3fc1b4",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[contains(.,'Mon tableau de bord')]",
+      "targets": [
+        ["id=last_command_title", "id"],
+        ["css=#last_command_title", "css:finder"],
+        ["xpath=//div[@id='last_command_title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/section/div", "xpath:idRelative"],
+        ["xpath=//div[2]/section/div", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "54637894-43d5-4213-af98-a3a124ba4f01",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(.,'Ma wishlist')]",
+      "targets": [
+        ["css=.MuiMenuItem-root-838:nth-child(7) .MuiTypography-root-276", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/section/div/ul/li[7]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//li[7]/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f5c6218-08f8-434e-a083-1913f3dcb1be",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form[@id='shipping']//input[@name='address']",
+      "targets": [
+        ["name=address", "name"],
+        ["css=.MuiInputBase-focused-334 > .MuiInputBase-input-342", "css:finder"],
+        ["xpath=//input[@name='address']", "xpath:attributes"],
+        ["xpath=//form[@id='invoice']/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "5 rue basse"
+    }, {
+      "id": "21b19877-fe84-4344-89dc-d35fb939cd2a",
+      "comment": "",
+      "command": "click",
+      "target": "id=invoice-button",
+      "targets": [
+        ["id=my-informations-button", "id"],
+        ["css=#my-informations-button", "css:finder"],
+        ["xpath=//button[@id='my-informations-button']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/form/div/div[11]/button", "xpath:idRelative"],
+        ["xpath=//form/div/div[11]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab7a3e6f-9dae-4582-80ab-2502308a7fb7",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=client-snackbar",
+      "targets": [
+        ["id=client-snackbar", "id"],
+        ["css=#client-snackbar", "css:finder"],
+        ["xpath=//span[@id='client-snackbar']", "xpath:attributes"],
+        ["xpath=//div[@id='error_signin']/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Erreur.')]", "xpath:innerText"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "2291d8a7-7b80-425a-a3ae-1b1d6e889986",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(.,\"Enregistré.\")]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50914c4c-5810-4c81-a610-fad9e21e4e20",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//span[contains(.,\"Erreur.\")]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f7238e16-d44c-46c9-ab90-1bb9101c2004",
+    "name": "account_shipping_adresses_valid",
+    "commands": [{
+      "id": "7a9424b0-91f7-487b-943f-8fef1d9a83dc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78ec830d-925e-426c-b19a-1e4e7806f806",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "723dfd3c-dda3-4ade-8358-4521e20c8fad",
+      "comment": "",
+      "command": "run",
+      "target": "_open_client_account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e40fec7-fe75-4f08-89e0-ba87209aceb6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Mes adresses')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14a3dde0-3e61-4cfd-8dc0-b41d697be50a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[contains(.,'Mon tableau de bord')]",
+      "targets": [
+        ["id=last_command_title", "id"],
+        ["css=#last_command_title", "css:finder"],
+        ["xpath=//div[@id='last_command_title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/section/div", "xpath:idRelative"],
+        ["xpath=//div[2]/section/div", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "d7ebb86e-bf37-48e5-a560-03eb648a96b0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(.,'Ma wishlist')]",
+      "targets": [
+        ["css=.MuiMenuItem-root-838:nth-child(7) .MuiTypography-root-276", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/section/div/ul/li[7]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//li[7]/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9045a145-3053-4615-b9c1-f418459a9d21",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form[@id='invoice']//input[@name='city']",
+      "targets": [
+        ["name=address", "name"],
+        ["css=.MuiInputBase-focused-334 > .MuiInputBase-input-342", "css:finder"],
+        ["xpath=//input[@name='address']", "xpath:attributes"],
+        ["xpath=//form[@id='invoice']/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Caen"
+    }, {
+      "id": "b0ae6220-d96b-4bf4-83ee-a83375d85d90",
+      "comment": "",
+      "command": "click",
+      "target": "id=shipping-button",
+      "targets": [
+        ["id=my-informations-button", "id"],
+        ["css=#my-informations-button", "css:finder"],
+        ["xpath=//button[@id='my-informations-button']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/form/div/div[11]/button", "xpath:idRelative"],
+        ["xpath=//form/div/div[11]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c578271-9776-4b18-91d4-5c4075c21a08",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=client-snackbar",
+      "targets": [
+        ["id=client-snackbar", "id"],
+        ["css=#client-snackbar", "css:finder"],
+        ["xpath=//span[@id='client-snackbar']", "xpath:attributes"],
+        ["xpath=//div[@id='error_signin']/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Erreur.')]", "xpath:innerText"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "9f28c96b-a32f-4b70-93e2-5ad6709afbb7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(.,\"Enregistré.\")]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8815f645-aa26-4b93-999b-707593c4e0ec",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//span[contains(.,\"Erreur.\")]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a5410070-9518-4e16-9df1-c21c34138b40",
+    "name": "account_shipping_adresses_invalid",
+    "commands": [{
+      "id": "a84afd10-e39a-4550-94f8-aac849559115",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "46c64939-8c79-4c78-9038-4fb8607c486e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b70899e-7f4e-49c7-9d50-af3ca8fc4788",
+      "comment": "",
+      "command": "run",
+      "target": "_open_client_account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "665e3b07-633d-4923-91aa-f0f76bb0ca68",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Mes adresses')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fb245d1-093b-4c46-a494-91dd3e9495d3",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[contains(.,'Mon tableau de bord')]",
+      "targets": [
+        ["id=last_command_title", "id"],
+        ["css=#last_command_title", "css:finder"],
+        ["xpath=//div[@id='last_command_title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/section/div", "xpath:idRelative"],
+        ["xpath=//div[2]/section/div", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "1a7ed45d-4b64-46e9-b4d4-2acee6ba8748",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(.,'Ma wishlist')]",
+      "targets": [
+        ["css=.MuiMenuItem-root-838:nth-child(7) .MuiTypography-root-276", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/section/div/ul/li[7]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//li[7]/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a53e8a2-9c5e-45a4-aceb-57847e4c0450",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form[@id='shipping']//input[@name='postalCode']",
+      "targets": [
+        ["name=address", "name"],
+        ["css=.MuiInputBase-focused-334 > .MuiInputBase-input-342", "css:finder"],
+        ["xpath=//input[@name='address']", "xpath:attributes"],
+        ["xpath=//form[@id='invoice']/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71424783-dc93-4e96-82e6-30bde4535b90",
+      "comment": "",
+      "command": "click",
+      "target": "id=shipping-button",
+      "targets": [
+        ["id=my-informations-button", "id"],
+        ["css=#my-informations-button", "css:finder"],
+        ["xpath=//button[@id='my-informations-button']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/form/div/div[11]/button", "xpath:idRelative"],
+        ["xpath=//form/div/div[11]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eadb1cc6-13b9-4570-8574-588bd6c6299a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[contains(.,\"Requis\")]",
+      "targets": [],
+      "value": "5000"
+    }]
+  }, {
+    "id": "36b6da4c-9092-4561-9dc7-5236b63bcedf",
+    "name": "account_clinic",
+    "commands": [{
+      "id": "5f755975-eb5e-4f43-a9b4-70363bd6ccac",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23a6d819-54da-4916-ab79-59ee28f3c9c4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffe64512-8ba6-4621-a776-95cf152228f0",
+      "comment": "",
+      "command": "run",
+      "target": "_open_client_account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed4b0951-b8a4-4180-a5c9-097540ddd436",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Ma clinique')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f6d6e85-0122-443e-8df7-cb16322ddf71",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Clinique - La Boutique Vétérinaire",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8bd96eb3-f956-456d-a552-e01b957201a0",
+    "name": "account_command",
+    "commands": [{
+      "id": "33bd7337-77c8-4e3c-9fa6-0d3338a4d2e7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7f986ee-ddcb-4af0-9552-3b636532d641",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89de523b-897e-4dfc-8fdf-ea1ebb884bb6",
+      "comment": "",
+      "command": "run",
+      "target": "_open_client_account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92934949-e531-4ac3-8823-bd4b39ba5dd2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Mes commandes')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27e1e1f2-d4a9-4b61-b42b-e9ddc1178a2e",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=commands-title",
+      "targets": [
+        ["id=commands-title", "id"],
+        ["css=#commands-title", "css:finder"],
+        ["xpath=//div[@id='commands-title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "9e1f78b6-bbe8-4a11-813c-b6cc07611f11",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(.,'Ma wishlist')]",
+      "targets": [
+        ["css=.MuiMenuItem-root-838:nth-child(7) .MuiTypography-root-276", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/section/div/ul/li[7]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//li[7]/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67fe75e5-7b14-4d51-a9bc-5e65104bace7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.detail-button",
+      "targets": [
+        ["css=.MuiTableRow-root-635:nth-child(1) > .MuiTableCell-root-640 > .MuiButtonBase-root-292", "css:finder"],
+        ["xpath=(//button[@type='button'])[20]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/div/div[2]/table/tbody/tr/td[4]/button", "xpath:idRelative"],
+        ["xpath=//td[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d5eb369-cb60-4f55-be05-7806cb05866f",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=close-button",
+      "targets": [
+        ["id=close-button", "id"],
+        ["css=#close-button", "css:finder"],
+        ["xpath=//button[@id='close-button']", "xpath:attributes"],
+        ["xpath=//div[5]/div[2]/div/div[3]/button", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "e305288f-9d3b-46f1-90c7-d069243e3511",
+      "comment": "",
+      "command": "click",
+      "target": "id=close-button",
+      "targets": [
+        ["id=close-button", "id"],
+        ["css=#close-button", "css:finder"],
+        ["xpath=//button[@id='close-button']", "xpath:attributes"],
+        ["xpath=//div[6]/div[2]/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5099f72a-475d-4b9e-8a81-5391a5a11ac0",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=commands-title",
+      "targets": [
+        ["id=commands-title", "id"],
+        ["css=#commands-title", "css:finder"],
+        ["xpath=//div[@id='commands-title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "bd03d9ba-cfd3-44f1-baa4-40c415db74e0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.invoice-button",
+      "targets": [
+        ["css=.MuiTableRow-root-639:nth-child(5) .invoice-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[24]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/div/div[2]/table/tbody/tr[5]/td[4]/button", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0d1744d-6478-4410-b558-6a920a82c358",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//iframe",
+      "targets": [],
+      "value": "30000"
+    }]
+  }, {
+    "id": "24f788b0-2ad5-4738-b56f-41aaf4cb931d",
+    "name": "account_favorite_cart",
+    "commands": [{
+      "id": "d3207d33-06bf-4b3b-ab92-cc8106aeb40f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbcfe0ae-a047-4e84-ae18-999739bc740f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28d136f7-7316-44e9-baf9-e59ad602515d",
+      "comment": "",
+      "command": "run",
+      "target": "_open_client_account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df66d66b-bd75-4b8f-81a7-be76cbb6dca7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Mon panier favori')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf791df1-cf22-4a8a-bd73-6ce48c7e5b3f",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=close-button",
+      "targets": [
+        ["id=close-button", "id"],
+        ["css=#close-button", "css:finder"],
+        ["xpath=//button[@id='close-button']", "xpath:attributes"],
+        ["xpath=//div[5]/div[2]/div/div[3]/button", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "07b5d203-7df9-44bc-8426-bef07a34b4aa",
+      "comment": "",
+      "command": "click",
+      "target": "id=close-button",
+      "targets": [
+        ["id=close-button", "id"],
+        ["css=#close-button", "css:finder"],
+        ["xpath=//button[@id='close-button']", "xpath:attributes"],
+        ["xpath=//div[6]/div[2]/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8a37505-25e9-4a06-b3c8-1c8684e11a04",
+      "comment": "",
+      "command": "waitForElementNotPresent",
+      "target": "id=close-button",
+      "targets": [
+        ["id=close-button", "id"],
+        ["css=#close-button", "css:finder"],
+        ["xpath=//button[@id='close-button']", "xpath:attributes"],
+        ["xpath=//div[5]/div[2]/div/div[3]/button", "xpath:position"]
+      ],
+      "value": "5000"
+    }]
+  }, {
+    "id": "c65982f5-a9f8-459c-a53f-c285f6b8a03c",
+    "name": "account_wishlist",
+    "commands": [{
+      "id": "f4da64e7-f3cc-4f01-804a-79e51a3d5cc6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01ac1ad2-e41e-4bea-a0e2-8e47318f64f0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2348ed16-e088-4b37-9be0-1f7772df7747",
+      "comment": "",
+      "command": "run",
+      "target": "_open_client_account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b4ad055-7d75-446a-81cb-9d0e98b215cf",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Ma wishlist')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3679aafd-0c64-4900-9d89-62c1c55c9f80",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=wishlist-title",
+      "targets": [
+        ["id=last_command_title", "id"],
+        ["css=#last_command_title", "css:finder"],
+        ["xpath=//div[@id='last_command_title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/section/div", "xpath:idRelative"],
+        ["xpath=//div[2]/section/div", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "8d79ddd2-61ff-4b9b-a30e-2a065bec97ae",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(.,'Mes avoirs')]",
+      "targets": [
+        ["css=.MuiMenuItem-root-838:nth-child(7) .MuiTypography-root-276", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/section/div/ul/li[7]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//li[7]/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "545b54c2-cbd1-4766-92a6-6401a4c72830",
+    "name": "account_cookies",
+    "commands": [{
+      "id": "7e8e06a5-c58d-49c6-818b-b2049e679ed2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f5b1504e-a2a3-4afa-83f3-2b4a547db4fd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52b53a05-2b3e-4cc1-b040-b97ed75dcf1c",
+      "comment": "",
+      "command": "run",
+      "target": "_open_client_account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14c93853-6be3-4f7a-8339-c635f2098568",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Mes Cookies')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4615de4e-27d8-4ca9-be29-d5c51cd9c6a2",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=dialogTitle",
+      "targets": [
+        ["id=dialogTitle", "id"],
+        ["css=#dialogTitle", "css:finder"],
+        ["xpath=//span[@id='dialogTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='tarteaucitronMainLineOffset']/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Panneau de gestion des cookies')]", "xpath:innerText"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "ef66b310-de8a-4cd8-a22d-5b04f3343aee",
+      "comment": "",
+      "command": "click",
+      "target": "id=tarteaucitronClosePanel",
+      "targets": [
+        ["id=tarteaucitronClosePanel", "id"],
+        ["css=#tarteaucitronClosePanel", "css:finder"],
+        ["xpath=//button[@id='tarteaucitronClosePanel']", "xpath:attributes"],
+        ["xpath=//div[@id='tarteaucitron']/button", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Fermer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "640ba0e5-55e0-4d94-af64-a609cb6038c5",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "id=dialogTitle",
+      "targets": [
+        ["id=dialogTitle", "id"],
+        ["css=#dialogTitle", "css:finder"],
+        ["xpath=//span[@id='dialogTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='tarteaucitronMainLineOffset']/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Panneau de gestion des cookies')]", "xpath:innerText"]
+      ],
+      "value": "5000"
+    }]
+  }, {
+    "id": "b7c3f303-26ea-435a-9726-ffa6d6682da7",
+    "name": "account_credits",
+    "commands": [{
+      "id": "fe6dcc10-6fda-46cb-b074-2a4702f159c7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80d991e5-3ffa-41d0-9262-a0b8abad4cdd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79dbecd2-03f9-47de-b360-d6cf2c99095d",
+      "comment": "",
+      "command": "run",
+      "target": "_open_client_account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b687087-a990-4244-95d8-a59a5c27adba",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Mes avoirs')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76793875-a5f2-4a2a-a654-11dd78503fc5",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=credits-title",
+      "targets": [
+        ["id=last_command_title", "id"],
+        ["css=#last_command_title", "css:finder"],
+        ["xpath=//div[@id='last_command_title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/section/div", "xpath:idRelative"],
+        ["xpath=//div[2]/section/div", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "7da9dc28-2fc6-47be-a6c4-e2cc9cd0f5df",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(.,'Ma wishlist')]",
+      "targets": [
+        ["css=.MuiMenuItem-root-838:nth-child(7) .MuiTypography-root-276", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/section/div/ul/li[7]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//li[7]/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21a16503-813c-438a-b5f8-2ca4586a1d3e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.detail-button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a616f9ed-63e6-4877-93ec-7b2fe53da530",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=close-button",
+      "targets": [
+        ["id=close-button", "id"],
+        ["css=#close-button", "css:finder"],
+        ["xpath=//button[@id='close-button']", "xpath:attributes"],
+        ["xpath=//div[5]/div[2]/div/div[3]/button", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "c9a5b690-0ca9-4211-986b-91d509ec6f12",
+      "comment": "",
+      "command": "click",
+      "target": "id=close-button",
+      "targets": [
+        ["id=close-button", "id"],
+        ["css=#close-button", "css:finder"],
+        ["xpath=//button[@id='close-button']", "xpath:attributes"],
+        ["xpath=//div[6]/div[2]/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bfb6bca-9919-4779-98ea-0997f2e6738e",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=credits-title",
+      "targets": [
+        ["id=last_command_title", "id"],
+        ["css=#last_command_title", "css:finder"],
+        ["xpath=//div[@id='last_command_title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/section/div", "xpath:idRelative"],
+        ["xpath=//div[2]/section/div", "xpath:position"]
+      ],
+      "value": "5000"
     }]
   }],
   "suites": [{
