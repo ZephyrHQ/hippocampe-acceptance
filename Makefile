@@ -16,7 +16,7 @@ build:
 
 # Go to console
 cli:
-	docker-compose exec php /bin/sh
+	docker-compose exec runner sh
 
 # Tests
 tests-bv:
