@@ -2650,6 +2650,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "36b1ac2d-ff3f-49e0-896a-932bcc3dc722",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=colissimo-iframe",
+      "targets": [],
+      "value": "30000"
+    }, {
       "id": "c65e95f5-f0dd-4777-9f34-c01444f78397",
       "comment": "",
       "command": "selectFrame",
@@ -2758,6 +2765,13 @@
       "comment": "",
       "command": "run",
       "target": "purchase_tunnel_informations",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c091723-be7a-447c-91bf-5a33bae45c96",
+      "comment": "",
+      "command": "open",
+      "target": "/th/shipping",
       "targets": [],
       "value": ""
     }, {
@@ -2912,14 +2926,132 @@
       "id": "bfb563b8-dff1-4ddb-8995-b06fc697393d",
       "comment": "",
       "command": "waitForElementPresent",
-      "target": "id=confirmButtonTop",
-      "targets": [],
+      "target": "id=createAccount",
+      "targets": [
+        ["id=createAccount", "id"],
+        ["linkText=Payer par carte", "linkText"],
+        ["css=#createAccount", "css:finder"],
+        ["xpath=//a[contains(text(),'Payer par carte')]", "xpath:link"],
+        ["xpath=//a[@id='createAccount']", "xpath:attributes"],
+        ["xpath=//div[@id='signupContainer']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/webapps/xoonboarding?token=50G02233B0882130N&country.x=FR&locale.x=fr_FR')]", "xpath:href"],
+        ["xpath=//div[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Payer par carte')]", "xpath:innerText"]
+      ],
       "value": "30000"
     }, {
       "id": "72c1e776-03c9-45b3-8f9a-c20a1be6d97e",
       "comment": "",
       "command": "click",
-      "target": "id=confirmButtonTop",
+      "target": "id=createAccount",
+      "targets": [
+        ["id=createAccount", "id"],
+        ["linkText=Payer par carte", "linkText"],
+        ["css=#createAccount", "css:finder"],
+        ["xpath=//a[contains(text(),'Payer par carte')]", "xpath:link"],
+        ["xpath=//a[@id='createAccount']", "xpath:attributes"],
+        ["xpath=//div[@id='signupContainer']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/webapps/xoonboarding?token=50G02233B0882130N&country.x=FR&locale.x=fr_FR')]", "xpath:href"],
+        ["xpath=//div[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Payer par carte')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dadcd59f-0828-4bd0-bfbf-20b2a41a234b",
+      "comment": "",
+      "command": "select",
+      "target": "name=cardType",
+      "targets": [],
+      "value": "Visa"
+    }, {
+      "id": "21e16894-9ab1-4685-86d3-c31c22482cf6",
+      "comment": "",
+      "command": "type",
+      "target": "name=cardNumber",
+      "targets": [],
+      "value": "4111111111111111"
+    }, {
+      "id": "b0c552cf-85f7-4c0a-a50b-d796cde49be9",
+      "comment": "",
+      "command": "type",
+      "target": "name=expiry_value",
+      "targets": [],
+      "value": "01/25"
+    }, {
+      "id": "7eca4037-bc14-411a-92e9-a2c8f8023f32",
+      "comment": "",
+      "command": "type",
+      "target": "name=cvv",
+      "targets": [],
+      "value": "600"
+    }, {
+      "id": "1982b6a2-1815-462f-8a8f-042280326771",
+      "comment": "",
+      "command": "type",
+      "target": "name=firstName",
+      "targets": [],
+      "value": "Test"
+    }, {
+      "id": "c7ec7d5a-ac3b-48e5-a02e-4487278b35d5",
+      "comment": "",
+      "command": "type",
+      "target": "name=lastName",
+      "targets": [],
+      "value": "Test"
+    }, {
+      "id": "5c9cc30e-7b60-415f-a792-cf772448992b",
+      "comment": "",
+      "command": "type",
+      "target": "name=billingLine1",
+      "targets": [],
+      "value": "5 rue basse"
+    }, {
+      "id": "1151b048-a76f-4554-82af-5886f90787bd",
+      "comment": "",
+      "command": "type",
+      "target": "name=billingPostalCode",
+      "targets": [],
+      "value": "14000"
+    }, {
+      "id": "118b8eeb-b7fa-482a-bba4-f6c38ef943c7",
+      "comment": "",
+      "command": "type",
+      "target": "name=billingCity",
+      "targets": [],
+      "value": "Caen"
+    }, {
+      "id": "5d7a9274-829f-4f6f-94f2-94884eb7b0d1",
+      "comment": "",
+      "command": "type",
+      "target": "name=billingCity",
+      "targets": [],
+      "value": "Caen"
+    }, {
+      "id": "e266fe6a-fe93-4889-acf7-72343f793fc2",
+      "comment": "",
+      "command": "type",
+      "target": "name=telephone",
+      "targets": [],
+      "value": "0102030405"
+    }, {
+      "id": "64c0b202-9539-4469-9e1b-8d742e37a7f7",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [],
+      "value": "test@test.fr"
+    }, {
+      "id": "ef68f0d1-73b1-4940-843d-37ab50dcbcbb",
+      "comment": "",
+      "command": "click",
+      "target": "id=guestSignup2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd2069b4-4b77-45a0-858f-5bba43e0465e",
+      "comment": "",
+      "command": "click",
+      "target": "id=guestSubmit",
       "targets": [],
       "value": ""
     }, {
@@ -2928,7 +3060,7 @@
       "command": "waitForElementPresent",
       "target": "xpath=//h1[contains(.,\"Paiement accepté\")]",
       "targets": [],
-      "value": "5000"
+      "value": "30000"
     }, {
       "id": "7d4b4508-f423-40ff-abc4-b1fa5b068743",
       "comment": "",
@@ -2987,6 +3119,13 @@
       "comment": "",
       "command": "run",
       "target": "purchase_tunnel_informations",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0f36ede-86b7-4455-8396-8ac2ce9b192a",
+      "comment": "",
+      "command": "open",
+      "target": "/th/shipping",
       "targets": [],
       "value": ""
     }, {
