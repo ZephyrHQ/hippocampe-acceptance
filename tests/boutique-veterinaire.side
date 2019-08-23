@@ -3196,6 +3196,222 @@
       "targets": [],
       "value": ""
     }]
+  }, {
+    "id": "08459c69-50cb-4cab-9170-b7748f6117ec",
+    "name": "products",
+    "commands": [{
+      "id": "cf7a61fc-6806-47eb-844a-5cd7e21b5247",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "140e966e-1e62-46c5-ad07-7004a78a6d60",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7bade4b-57bd-44bd-afe2-6246c783e30f",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=search_clinic_title",
+      "targets": [
+        ["id=search_clinic_title", "id"],
+        ["css=#search_clinic_title", "css:finder"],
+        ["xpath=//div[@id='search_clinic_title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section[2]/div/div", "xpath:idRelative"],
+        ["xpath=//section[2]/div/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "61134215-6ef9-4ade-a388-c33038c707ab",
+      "comment": "",
+      "command": "run",
+      "target": "products_category",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba594c77-04d5-4f25-8ea6-169197d090da",
+      "comment": "",
+      "command": "run",
+      "target": "products_facets",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e8db82c-cdfd-42d2-bc93-af9e874d66b5",
+      "comment": "",
+      "command": "run",
+      "target": "products_change_category",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "62521272-e030-46f9-8e02-6da6dd402f92",
+    "name": "products_category",
+    "commands": [{
+      "id": "4280e174-2ac5-40ae-bfcd-5cfdfd7ad2c3",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "title"
+    }, {
+      "id": "503fc26e-d5ff-42dc-9e52-8f2f08bbf07c",
+      "comment": "",
+      "command": "if",
+      "target": "${title} === 'Bienvenue - La Boutique Vétérinaire'",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41ff6549-59d3-43f4-9d29-d5bd19b9a6cf",
+      "comment": "",
+      "command": "click",
+      "target": "id=Chiens",
+      "targets": [
+        ["id=Chiens", "id"],
+        ["css=#Chiens", "css:finder"],
+        ["xpath=//button[@id='Chiens']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div[2]/div[3]/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8f2a106-b0a1-4412-ac00-94023b05e5e9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,\"Accessoires\")]",
+      "targets": [
+        ["css=.MuiGridListTile-root-1026:nth-child(1) .MuiTypography-root-384", "css:finder"],
+        ["xpath=//div/div/div/div/div/div/ul/li/div/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca17925c-7e03-4a65-a10b-86ab8abc830d",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[contains(.,\"Accessoires\")]",
+      "targets": [
+        ["css=.MuiTypography-h4-942", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "243e17ce-cdb9-486a-97c0-34b65135d914",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ee76fc28-b5b6-438b-a08d-02dd9473243d",
+    "name": "products_change_category",
+    "commands": [{
+      "id": "f0158430-ca9d-4be0-ac5b-1ec133654ce0",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "title"
+    }, {
+      "id": "95d8eca6-4184-46e0-8cd4-f6873a98b428",
+      "comment": "",
+      "command": "if",
+      "target": "${title} === 'Accessoires - La Boutique Vétérinaire'",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5143dd57-276d-4e17-b4a7-b70890e67754",
+      "comment": "",
+      "command": "click",
+      "target": "id=Chats",
+      "targets": [
+        ["id=Chats", "id"],
+        ["css=#Chats", "css:finder"],
+        ["xpath=//button[@id='Chats']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div[2]/div[3]/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e41cc62-8df4-41cc-b913-3080411f6f10",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,\"Alimentation physiologique\")]",
+      "targets": [
+        ["css=.MuiGridListTile-root-1026:nth-child(1) .MuiTypography-root-384", "css:finder"],
+        ["xpath=//div/div/div/div/div/div/ul/li/div/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e9c6372-cde4-4f96-8f18-a18a1754eeba",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[contains(.,\"Alimentation physiologique\")]",
+      "targets": [
+        ["css=.MuiTypography-h4-942", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "cb06a3a6-c59a-4500-bf30-8c73869fa97b",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4bc604f6-0d70-43ce-9963-7f4617f4f82a",
+    "name": "products_facets",
+    "commands": [{
+      "id": "570a9cff-a8f8-44d7-a23e-b412b1fc5ae4",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "title"
+    }, {
+      "id": "ea56eeb9-5709-45fd-ae09-2c55353d9e4c",
+      "comment": "",
+      "command": "if",
+      "target": "${title} === 'Accessoires - La Boutique Vétérinaire'",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71e75bfd-3934-4688-bb02-3f7359b0784a",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//span[contains(.,'Jeux')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "701f8924-95b2-49ff-9921-10f3a7713693",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Jeux')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b890bfc-009e-4750-9f7a-4af0c15e4a87",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[contains(.,'AirDog football')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "627748ca-3172-4ef1-8f37-85c6a55953f1",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "c95fe1ce-dd65-4814-aa65-3bccdb3f2f08",
