@@ -2,7 +2,7 @@
   "id": "a1611c41-e0d6-4be6-abf9-d4b6d2861865",
   "version": "2.0",
   "name": "boutique-veterinaire",
-  "url": "https://bv.local.zephyr-ci.top/",
+  "url": "http://localhost:3000/",
   "tests": [{
     "id": "99a3234d-b065-49b0-8885-de9069b23012",
     "name": "home_headerslider",
@@ -3902,6 +3902,65 @@
       "target": "name=login",
       "targets": [],
       "value": ""
+    }]
+  }, {
+    "id": "c715c07d-37ff-448c-ba8b-d65c322367cf",
+    "name": "clinic",
+    "commands": [{
+      "id": "ed0d8362-f6bd-40e8-b005-5a83dfdf5df1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a749eeda-0484-47e0-b6e2-b7048c5d4a6d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x773",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37aee10a-7b6f-449f-9d38-8a181dbcbced",
+      "comment": "",
+      "command": "click",
+      "target": "id=clinic_button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0e1a3f8-bd1b-48c6-b7a6-ed8fccb07ab0",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=clinic_title",
+      "targets": [
+        ["id=clinic_title", "id"],
+        ["css=#clinic_title", "css:finder"],
+        ["xpath=//div[@id='clinic_title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//section[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": "VOTRE CLINIQUE VÉTÉRINAIRE"
+    }, {
+      "id": "584c40ba-2943-481a-9aeb-7d8ced37a46d",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [],
+      "value": "phenix"
+    }, {
+      "id": "abcd4969-f0d4-4835-9c1d-cdc385212f57",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Rechercher')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb6251d9-f85f-4592-951f-76d3732fd16a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[contains(.,'Clinique Vétérinaire du PHENIX')]",
+      "targets": [],
+      "value": "30000"
     }]
   }],
   "suites": [{
