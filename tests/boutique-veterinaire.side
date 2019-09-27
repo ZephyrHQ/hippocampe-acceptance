@@ -2,7 +2,7 @@
   "id": "a1611c41-e0d6-4be6-abf9-d4b6d2861865",
   "version": "2.0",
   "name": "boutique-veterinaire",
-  "url": "http://localhost:3000/",
+  "url": "https://laboutiqueveterinaire-preprod.pp.hippocampe.njord.fr/",
   "tests": [{
     "id": "99a3234d-b065-49b0-8885-de9069b23012",
     "name": "home_headerslider",
@@ -835,7 +835,7 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "a2f1baca-45b9-46d9-a983-41650e9ff5c9",
+      "id": "d5fb446f-42f4-4589-a14c-c154e96238eb",
       "comment": "",
       "command": "type",
       "target": "name=email",
@@ -846,7 +846,7 @@
         ["xpath=//div[@id='root']/div/section/div/div/div/form/div/div/div[2]/div/div/input", "xpath:idRelative"],
         ["xpath=//form/div/div/div[2]/div/div/input", "xpath:position"]
       ],
-      "value": "invalid@email.fr"
+      "value": "invalidemail.fr"
     }, {
       "id": "81feb6e6-701c-4f23-a7d0-e32664620c93",
       "comment": "",
@@ -860,6 +860,26 @@
         ["xpath=//div[2]/div[2]/div/div/input", "xpath:position"]
       ],
       "value": "invalidpassword"
+    }, {
+      "id": "b2201197-451b-4469-8773-a9300c4a25f5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(.,\"Courriel invalide\")]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2f1baca-45b9-46d9-a983-41650e9ff5c9",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.MuiInputBase-focused-930 > .MuiInputBase-input-938", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/section/div/div/div/form/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "valid@email.fr"
     }, {
       "id": "3c9cd10a-8871-47f3-8188-cdb9871be131",
       "comment": "",
@@ -892,13 +912,6 @@
       "comment": "",
       "command": "assertElementPresent",
       "target": "xpath=//span[contains(.,\"Erreur de connexion : le couple identifiant / mot de passe n'a pas été reconnu.\")]",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "b2201197-451b-4469-8773-a9300c4a25f5",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "xpath=//span[contains(.,\"L'email est invalide\")]",
       "targets": [],
       "value": ""
     }]
@@ -1573,6 +1586,19 @@
       ],
       "value": "5 rue bouquet"
     }, {
+      "id": "1d935c91-8636-4a3f-84c9-4c869a7d6a64",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form[@id='invoice']//input[@name='city']",
+      "targets": [
+        ["name=address", "name"],
+        ["css=.MuiInputBase-focused-334 > .MuiInputBase-input-342", "css:finder"],
+        ["xpath=//input[@name='address']", "xpath:attributes"],
+        ["xpath=//form[@id='invoice']/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
       "id": "fc423112-7cb6-45db-87aa-8b9b2ef2d1ed",
       "comment": "",
       "command": "click",
@@ -1692,7 +1718,7 @@
       "id": "2291d8a7-7b80-425a-a3ae-1b1d6e889986",
       "comment": "",
       "command": "assertElementPresent",
-      "target": "xpath=//span[contains(.,\"Enregistré.\")]",
+      "target": "xpath=//span[contains(.,\"Adresse de facturation modifiée avec succès.\")]",
       "targets": [],
       "value": ""
     }, {
@@ -1802,7 +1828,7 @@
       "id": "9f28c96b-a32f-4b70-93e2-5ad6709afbb7",
       "comment": "",
       "command": "assertElementPresent",
-      "target": "xpath=//span[contains(.,\"Enregistré.\")]",
+      "target": "xpath=//span[contains(.,\"Adresse de livraison modifié avec succès.\")]",
       "targets": [],
       "value": ""
     }, {
@@ -2019,7 +2045,7 @@
         ["xpath=//button[@id='close-button']", "xpath:attributes"],
         ["xpath=//div[5]/div[2]/div/div[3]/button", "xpath:position"]
       ],
-      "value": "30000"
+      "value": "5000"
     }, {
       "id": "e305288f-9d3b-46f1-90c7-d069243e3511",
       "comment": "",
@@ -2063,7 +2089,7 @@
       "command": "waitForElementPresent",
       "target": "xpath=//iframe",
       "targets": [],
-      "value": "30000"
+      "value": "5000"
     }]
   }, {
     "id": "24f788b0-2ad5-4738-b56f-41aaf4cb931d",
@@ -2424,7 +2450,7 @@
       "id": "6940220f-9d2d-442b-9c18-c5812195fc51",
       "comment": "",
       "command": "click",
-      "target": "xpath=//span[contains(.,\"Ajout et voir mon panier\")]",
+      "target": "xpath=//span[contains(.,\"Ajouter et voir mon panier\")]",
       "targets": [],
       "value": ""
     }, {
@@ -3998,7 +4024,21 @@
     "parallel": false,
     "timeout": 300,
     "tests": ["36b6da4c-9092-4561-9dc7-5236b63bcedf", "8bd96eb3-f956-456d-a552-e01b957201a0", "7a5b798d-ed5e-4700-9cb2-c38e3b0715aa", "b7c3f303-26ea-435a-9726-ffa6d6682da7", "24f788b0-2ad5-4738-b56f-41aaf4cb931d", "d854fac6-4953-4eca-b7fc-efd55e51995a", "3174195d-65e3-4bea-a701-72c1e8c8fb00", "03131e29-debe-4460-9ab0-683125c859fa", "75e64154-4d05-4f5e-9990-81eb57f10a19", "a5410070-9518-4e16-9df1-c21c34138b40", "f7238e16-d44c-46c9-ab90-1bb9101c2004", "c65982f5-a9f8-459c-a53f-c285f6b8a03c"]
+  }, {
+    "id": "de8b0489-9896-47e8-8c6e-6c6c1227a756",
+    "name": "Clinique",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c715c07d-37ff-448c-ba8b-d65c322367cf"]
+  }, {
+    "id": "0df7bea3-d667-45c0-9f32-f18053481e85",
+    "name": "Tunnel d'achat",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a645b998-85fb-43eb-8579-7c71167066ae", "2d3c189d-4682-4532-8f74-d6cabc5932ab"]
   }],
-  "urls": ["https://laboutiqueveterinaire-alpha.pp.hippocampe.njord.fr/", "localhost:3000", "http://localhost:3000/", "https://bv.local.zephyr-ci.top/"],
+  "urls": ["https://laboutiqueveterinaire-alpha.pp.hippocampe.njord.fr/", "localhost:3000", "http://localhost:3000/", "https://bv.local.zephyr-ci.top/", "https://laboutiqueveterinaire-preprod.pp.hippocampe.njord.fr/"],
   "plugins": []
 }
